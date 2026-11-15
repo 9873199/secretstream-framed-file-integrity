@@ -1,0 +1,23 @@
+完成。在 PyNaCl 现有 libsodium secretstream 绑定之上新增了一层面向文件对象的版本化容器，没有自造任何加密原语——每一帧的 seal/open 都由 libsodium 完成。
+
+## 新增内容
+
+**`src/nacl/secretstream.py`** — 容器与读写封装
+- **二进制容器 v1**：固定 magic `b"NACLSS"` + version `\x01` + 24 字节 libsodium header，之后每帧 = 4 字节网络序长度（**包含 ABYTES**）+ 密文。
+- **帧上限**由构造器 `max_frame_length` 指定，必须为 int、严格大于 ABYTES 且不超过 `min(MESSAGEBYTES_MAX+ABYTES, 0xFFFFFFFF)`；默认 64KiB+ABYTES。
+- **写端**按有界短读分块；空输入也产生唯一的空 FINAL（每次随机 header 保证两个空文件不同）。
+- **AD 明确编码**：域分隔串 + 带长度前缀的容器头、context、u64be 帧序号、u32be 声明长度，全部大端、无 dict/JSON/pickle、无平台字节序。同密钥不同 context 的帧不可互换（同 context 跨文件拼接也因容器头入 AD 而失败）。
+- **读端先核长度再分配再读帧体**，完整帧才调 `pull`；FINAL 缺失/截断/重复/非末帧/尾随数据/重排/重放/跨文件拼接分别落到可分辨的异常：`ContainerFormatError`、`FrameAuthenticationError`、`FinalFrameError`、`ContainerStateError`（统一继承 `ContainerError → CryptoError`）。
+- **两种语义**：`SecretStreamReader` 逐块读取（文档明确"曾产出明文 ≠ 整份文件已验证"，只有迭代到 FINAL+EOF 才算完整）；`decrypt_stream(..., scratch=...)` 严格入口——明文只写调用者提供的可 seek 暂存流，FINAL 和 EOF 都确认后才复制到目标；失败时目标零写入、暂存 seek+truncate 清理；源/目标/暂存均不关闭；暂存写失败或最终复制失败如实抛 `OSError`，不承诺普通目标流可原子回滚。
+
+**`tests/test_secretstream_container.py`**（47 个测试，全部跑真实 secretstream）：短读、非 seek 输入、空文件、rekey（含空/非空缓冲两条路径）、最大帧边界、错 context/错密钥、长度字段认证、重排/重放/拼接、每个字节位置截断（并断言目标零写入+暂存已清理）、暂存写失败与最终复制失败、无日志/无网络/无平台字节序的卫生检查，外加 hypothesis 属性测试。
+
+**文档与变更记录**：`docs/secretstream.rst`（含可执行 doctest，已挂入 index）、`CHANGELOG.rst` Unreleased 条目。
+
+## 验证结果
+
+- 全套 **4708 passed, 10 skipped**（skip 均为原有的最小化 libsodium 限制）
+- `ruff check` / `ruff format --check`、`mypy`（51 文件零问题）、sphinx html+doctest（`-W`）、`doc8`、`check-manifest` 全部通过
+- 额外端到端验证：200KiB 数据默认 64KiB 分帧往返；对 20 万字节容器逐字节截断，异常只落在格式/Final 两类，全部可分辨
+
+改动尚未提交（按约定等你确认后再 commit/开 PR）。

@@ -1,0 +1,12 @@
+{
+  "time": "2026-11-15T14:25:31+08:00",
+  "argv": [
+    "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\env\\Scripts\\python.exe",
+    "-B",
+    "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2/test_acceptance.py"
+  ],
+  "cwd": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-source",
+  "exit_code": 1,
+  "stdout_log": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\independent-container.stdout.log",
+  "stderr_log": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\independent-container.stderr.log"
+}

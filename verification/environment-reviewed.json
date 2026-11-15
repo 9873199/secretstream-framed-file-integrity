@@ -1,0 +1,45 @@
+{
+  "time": "2026-11-15T14:38:52+08:00",
+  "uid": 2127,
+  "container": false,
+  "actual": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\env\\Scripts\\python.exe",
+    "modules": {
+      "nacl": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-source\\src\\nacl\\__init__.py",
+      "nacl.secretstream": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-source\\src\\nacl\\secretstream.py",
+      "nacl.bindings.crypto_secretstream": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-source\\src\\nacl\\bindings\\crypto_secretstream.py"
+    }
+  },
+  "dependency_lock": "alabaster==0.7.16\nast_serialize==0.13.1\nbabel==2.18.0\nbuild==1.6.1\ncertifi==2026.10.23\ncffi==2.1.1\ncharset-normalizer==3.5.2\ncheck-manifest==0.51\ncolorama==0.4.6\ncoverage==7.17.3\ndoc8==2.0.0\ndocutils==0.19\nhypothesis==6.170.15\nidna==3.20\nimagesize==2.0.1\niniconfig==2.3.1\nJinja2==3.1.6\nlibrt==0.16.0\nMarkupSafe==3.0.4\nmypy==2.4.1\nmypy_extensions==1.2.0\npackaging==26.3\npathspec==1.1.1\npluggy==1.7.0\npycparser==3.12\nPygments==2.21.0\nPyNaCl==1.6.2\npyproject_hooks==1.3.3\npytest==9.2.0\npytest-cov==7.1.0\nrequests==2.34.2\nrestructuredtext_lint==2.0.2\nruff==0.17.5\nsetuptools==84.2.1\nsnowballstemmer==3.1.1\nsortedcontainers==2.4.0\nSphinx==6.2.1\nsphinx_rtd_theme==3.1.0\nsphinxcontrib-applehelp==2.0.0\nsphinxcontrib-devhelp==2.0.0\nsphinxcontrib-htmlhelp==2.1.0\nsphinxcontrib-jquery==4.1\nsphinxcontrib-jsmath==2.0.0\nsphinxcontrib-qthelp==2.0.0\nsphinxcontrib-serializinghtml==2.0.0\nstevedore==5.10.0\ntyping_extensions==4.16.0\nurllib3==2.8.0\n",
+  "dependency_environment": "Reused task dependencies; same-version sodium extension support; product Python imports all from frozen replay",
+  "frozen_source_import_verified": true,
+  "external_runtime_services": [],
+  "environment_limits": [
+    "未容器化；Windows需要同版本PyNaCl1.6.2 wheel的_sodium扩展及lock依赖。",
+    "本次独立复跑只涵盖容器、secretstream绑定和secret相关71项；模型报告的完整4708项不作为本轮独立结果。"
+  ],
+  "task_preparation": {
+    "time": "2026-11-15T03:38:17+08:00",
+    "status": "BASELINE_READY_WITH_DECLARED_FIXTURE_SCOPE",
+    "uid": 2127,
+    "slug": "pynacl",
+    "python": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\env\\Scripts\\python.exe",
+    "workspace": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\workspaces\\pynacl",
+    "source_path": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\runtime-support;D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\workspaces\\pynacl\\src;D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\workspaces\\pynacl",
+    "task_environment": {
+      "HYPOTHESIS_STORAGE_DIRECTORY": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\hypothesis"
+    },
+    "dependency_lock": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\requirements-lock.txt",
+    "baseline_evidence": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\environment-preparation\\pynacl\\baseline-r2.json",
+    "baseline_stdout": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\environment-preparation\\pynacl\\baseline-r2.stdout.log",
+    "baseline_source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\environment-preparation\\pynacl\\baseline-source",
+    "baseline_scope_review": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\environment-preparation\\pynacl\\baseline-scope-review-r2.json",
+    "clean": true,
+    "source_proof": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\preparation\\pynacl\\source-proof.json",
+    "environment_reproducibility": "有外部依赖，未容器化",
+    "source_is_shallow": true,
+    "formal_models_started": 0,
+    "compiled_dependency_evidence": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\environment-preparation\\pynacl\\compiled-dependency.json"
+  }
+}

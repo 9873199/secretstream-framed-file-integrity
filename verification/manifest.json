@@ -1,0 +1,193 @@
+{
+  "created": "2026-11-15T14:38:53+08:00",
+  "reviewed": true,
+  "reviewer": "Codex primary reviewer",
+  "uid": 2127,
+  "frozen_commit": "863eb509173a7792775441fd39bd2ba9f28f30b2",
+  "native_trajectory_sha256": "da7314652d106f8ba4adb2cf31f3827d4dcaf4853d439abaf4325189cffe569d",
+  "files": [
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\freeze.json",
+      "path": "freeze.json",
+      "sha256": "3a05446c0901989192f9d6b85e4d8dc9f9da9bf28503624b592d969c36007f1f"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\freeze-audit.json",
+      "path": "freeze-audit.json",
+      "sha256": "5a98091924e6d61bf7e3e3fd70fb43b6ebf8ef57ac5f4e05e22640c8a333f41e"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\environment-reviewed.json",
+      "path": "environment-reviewed.json",
+      "sha256": "cebf560f3c66d08ce127add70ba6d5cf55cfb0cb473ef9a72c6b66c791bb2d5b"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\evidence-map.json",
+      "path": "evidence-map.json",
+      "sha256": "4ab19be29d07e52ca9498222d2c43deeb9832bf6747cab21614b2b0ac3533ea0"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\model-final-answer.txt",
+      "path": "model-final-answer.txt",
+      "sha256": "bfde2684ff8c9f6f407e67f6bdd9963fdbae039e29fd7aa18f099307827d9656"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\test-results.json",
+      "path": "test-results.json",
+      "sha256": "6d4dd99db7a3c75c626b14a8ad8658c2f3c77f1d0b4715a3bbb63f6fe411c18a"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\evaluation-qc.json",
+      "path": "evaluation-qc.json",
+      "sha256": "2cac7bc78c3d59f4e5cf605125299d9075d658caa733efd69078d457f7a782a0"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\recorded-runtime-r1\\actual-commands.json",
+      "path": "verification/recorded-runtime-r1/actual-commands.json",
+      "sha256": "727e8887fed06abbd5d8d96cd381bb1db7ab4502f2ad2c6ff5e76f3dd2fc3296"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\recorded-runtime-r1\\actual-keystrokes.json",
+      "path": "verification/recorded-runtime-r1/actual-keystrokes.json",
+      "sha256": "95f33fe88cd6a9aecd22b6880fa5942b84286f20a7105146434dff3cdb86797c"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\recorded-runtime-r1\\container-output.log",
+      "path": "verification/recorded-runtime-r1/container-output.log",
+      "sha256": "c0c5b276d3b2d4cd12d937d8daf0c90697b2521e06563ea992967070858d18b8"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\recorded-runtime-r1\\recording-status.json",
+      "path": "verification/recorded-runtime-r1/recording-status.json",
+      "sha256": "5efbcc688002cf8da03672a98c8a8abf437fa282a72e85127b85c71c9dbefffb"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\recorded-runtime-r1\\spec.json",
+      "path": "verification/recorded-runtime-r1/spec.json",
+      "sha256": "f5b5a861d2692929568b27b2930cef9499dd44d8db10761005021ad7d328240b"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\recorded-runtime-r1\\typing-check.json",
+      "path": "verification/recorded-runtime-r1/typing-check.json",
+      "sha256": "2eeeb0517da43a2e8f52574c447681be4d45cbeb55f841ba6aa0f87380c21081"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r1\\reviewed-spec.json",
+      "path": "verification/strict-container-r1/reviewed-spec.json",
+      "sha256": "80e69efb58c0b1a7d51874772de2cab3283f301be1d2b8d8b5e02f969fcd5d4d"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r1\\tool-failure-review-r2.json",
+      "path": "verification/strict-container-r1/tool-failure-review-r2.json",
+      "sha256": "1c6e7d12b41d0465a315d84850bb344d9116dd13b73d4c2da577071f73671b39"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r1\\tool-failure-review.json",
+      "path": "verification/strict-container-r1/tool-failure-review.json",
+      "sha256": "5112a8d6ee381e8baa3fe0057af70e44478f070167eb4fa5b6f024ee5baab110"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\actual-import.json",
+      "path": "verification/strict-container-r2/actual-import.json",
+      "sha256": "e3695e8ab5f924c46dc813a130f07d1b1a9708afb13b0f7254f9b3b58d7009e6"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\actual-import.stderr.log",
+      "path": "verification/strict-container-r2/actual-import.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\actual-import.stdout.log",
+      "path": "verification/strict-container-r2/actual-import.stdout.log",
+      "sha256": "eb4bfebe9fe5252109320fa6b72ef785714ca8cec6c3c9d585222642385fd403"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\demo.py",
+      "path": "verification/strict-container-r2/demo.py",
+      "sha256": "a226fa5bb32968eff0ac01082fa69b0a9ea9a97fb172611e755f18f2abb346a8"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\dependency-lock.json",
+      "path": "verification/strict-container-r2/dependency-lock.json",
+      "sha256": "c2f1ecca8c628d86e2847603b5d4d01e73bd6f611bfabc3f9487bab673f06130"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\dependency-lock.stderr.log",
+      "path": "verification/strict-container-r2/dependency-lock.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\dependency-lock.stdout.log",
+      "path": "verification/strict-container-r2/dependency-lock.stdout.log",
+      "sha256": "19f55ca859717524c89dfff2c9e0e13e3ee28204b507eb57c2b59170721427ee"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\independent-container.json",
+      "path": "verification/strict-container-r2/independent-container.json",
+      "sha256": "0ea4fe2fa0da10d9a33f727dcc888247cb56a4defe85dd6beeaf1979fc8e982d"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\independent-container.stderr.log",
+      "path": "verification/strict-container-r2/independent-container.stderr.log",
+      "sha256": "f1828282416a6af45fcfc8376abb69af1904e2bb2a7d0c882d8063d9156a9af3"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\independent-container.stdout.log",
+      "path": "verification/strict-container-r2/independent-container.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\model-and-binding-tests.json",
+      "path": "verification/strict-container-r2/model-and-binding-tests.json",
+      "sha256": "2276c94193d748093942e94c9c14dc8bda370ca018ed02834e6574a5ca428fcf"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\model-and-binding-tests.stderr.log",
+      "path": "verification/strict-container-r2/model-and-binding-tests.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\model-and-binding-tests.stdout.log",
+      "path": "verification/strict-container-r2/model-and-binding-tests.stdout.log",
+      "sha256": "818dbb5c384136a6e5e6ca8427aa06e7842665411cef34442286c12b3788581e"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-proof.json",
+      "path": "verification/strict-container-r2/replay-proof.json",
+      "sha256": "de1c311e05037a9d4e6a1a7268d12ed7aac9f28f93c3fa45d181b0e7a3b624ec"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\reproduction-notes.md",
+      "path": "verification/strict-container-r2/reproduction-notes.md",
+      "sha256": "059935f4bc0eb7fdd76ffac7443c432d4c3ec5fa56bc885e21f491c8b5ac0387"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\reviewed-spec.json",
+      "path": "verification/strict-container-r2/reviewed-spec.json",
+      "sha256": "025e22adc11c0a31c8902fe1ef76dacf50e978c6d0f235cf752111f9a670fbaa"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\runtime-support-proof.json",
+      "path": "verification/strict-container-r2/runtime-support-proof.json",
+      "sha256": "9ddd7313828bf2ff0c4a83e90b761d9618db17fd12ae2b77c49721521e6e5432"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\runtime_loader.py",
+      "path": "verification/strict-container-r2/runtime_loader.py",
+      "sha256": "f2755d356514479814f87a50cb575a0d75247a2063b01f3574071e9f1961b85f"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\test_acceptance.py",
+      "path": "verification/strict-container-r2/test_acceptance.py",
+      "sha256": "5f5a0b05c180517165d70bc52056966f918fa04cb31d1cdd8a1480592926ad4a"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\pytest-cache\\README.md",
+      "path": "verification/strict-container-r2/pytest-cache/README.md",
+      "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+    }
+  ],
+  "reproduction_readme": "UID2127 独立复现资料。Windows Python3.14.3，未容器化，使用PyNaCl1.6.2 wheel同版本_sodium.pyd，所有nacl Python产品模块均从冻结replay/src导入，actual-import和runtime-support-proof可核。公开复现先按dependency-lock.stdout.log装依赖，再运行 python verification/verification/strict-container-r2/runtime_loader.py test_acceptance.py：28项24过4失败。runtime_loader.py只解析已安装wheel原生扩展，不使用wheel的Python实现；--smoke实测通过。相关pytest可从产物根运行 python verification/verification/strict-container-r2/runtime_loader.py --pytest tests/test_secretstream_container.py tests/test_secretstream.py tests/test_secret.py -q -o addopts=：独立复跑71通过。独立AD编码和push/pull使用真实libsodium；每字节截断均核零目标写入。demo保留四项失败和exit1。Windows长路径复制及后验Hash工具问题留存r1/r2说明，未改源码、未重复测试计数，实际全文件Hash核验通过。",
+  "no_model_source_edits": true,
+  "native_trace_included": false
+}

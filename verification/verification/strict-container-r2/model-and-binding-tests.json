@@ -1,0 +1,21 @@
+{
+  "time": "2026-11-15T14:25:39+08:00",
+  "argv": [
+    "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\env\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "tests/test_secretstream_container.py",
+    "tests/test_secretstream.py",
+    "tests/test_secret.py",
+    "-q",
+    "-o",
+    "addopts=",
+    "-o",
+    "cache_dir=D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2/pytest-cache"
+  ],
+  "cwd": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-source",
+  "exit_code": 0,
+  "stdout_log": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\model-and-binding-tests.stdout.log",
+  "stderr_log": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\model-and-binding-tests.stderr.log"
+}

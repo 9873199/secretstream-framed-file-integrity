@@ -1,0 +1,32 @@
+{
+  "time": "2026-11-15T14:31:02+08:00",
+  "uid": 2127,
+  "run_id": "uf-20261115-new8-secretstream-authenticated-reader",
+  "actual": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\env\\Scripts\\python.exe",
+    "modules": {
+      "nacl": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-source\\src\\nacl\\__init__.py",
+      "nacl.secretstream": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-source\\src\\nacl\\secretstream.py",
+      "nacl.bindings.crypto_secretstream": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-source\\src\\nacl\\bindings\\crypto_secretstream.py"
+    }
+  },
+  "replay_source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-source",
+  "frozen_hashes_unchanged": true,
+  "replay_source_hashes_unchanged": true,
+  "dependency_environment": "Reused task dependencies; same-version sodium extension support; product Python imports all from frozen replay",
+  "commands": [
+    {
+      "name": "independent-container",
+      "exit_code": 1
+    },
+    {
+      "name": "model-and-binding-tests",
+      "exit_code": 0
+    }
+  ],
+  "score": null,
+  "semantic_review": "PENDING",
+  "hash_validation": "Windows extended absolute paths; all frozen file hashes actually compared after test commands",
+  "tool_repair": "Initial reviewer copy/hash path limits preserved; tests were executed once in r2 and not repeated merely to save proof."
+}

@@ -1,0 +1,16 @@
+{
+  "independent_container": {
+    "passed": 24,
+    "failed": 4,
+    "command": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\independent-container.json"
+  },
+  "model_and_binding_replay": {
+    "passed": 71,
+    "failed": 0,
+    "command": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\model-and-binding-tests.json"
+  },
+  "reviewer_tool_failures": {
+    "score_effect": null,
+    "path_limit_preserved": true
+  }
+}

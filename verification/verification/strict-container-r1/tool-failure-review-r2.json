@@ -1,0 +1,6 @@
+{
+  "time": "2026-11-15T14:31:02+08:00",
+  "score_effect": null,
+  "reason": "After fixing copy with extended paths, r2 tests executed; post-test hash helper also needed extended paths. All artifact/replay hashes now compared. Original runner and tool errors retained.",
+  "tests_repeated": false
+}

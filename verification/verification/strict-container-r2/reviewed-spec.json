@@ -1,0 +1,58 @@
+{
+  "uid": 2127,
+  "run_id": "uf-20261115-new8-secretstream-authenticated-reader",
+  "reviewed": true,
+  "reviewer": "Codex primary reviewer",
+  "frozen_trace_sha256": "da7314652d106f8ba4adb2cf31f3827d4dcaf4853d439abaf4325189cffe569d",
+  "revision": "strict-container-r2",
+  "runtime_support": {
+    "path": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\runtime-support",
+    "files": [
+      {
+        "path": "sitecustomize.py",
+        "sha256": "747013d9bd22de3eb43a30edc3d2501c002489c6ba08e003229f047d788aa01e"
+      }
+    ]
+  },
+  "product_modules": [
+    "nacl",
+    "nacl.secretstream",
+    "nacl.bindings.crypto_secretstream"
+  ],
+  "support_files": [
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\acceptance-2127-draft-r1.py",
+      "path": "test_acceptance.py",
+      "sha256": "5f5a0b05c180517165d70bc52056966f918fa04cb31d1cdd8a1480592926ad4a"
+    }
+  ],
+  "commands": [
+    {
+      "name": "independent-container",
+      "argv": [
+        "{python}",
+        "-B",
+        "{verification}/test_acceptance.py"
+      ],
+      "timeout": 180
+    },
+    {
+      "name": "model-and-binding-tests",
+      "argv": [
+        "{python}",
+        "-B",
+        "-m",
+        "pytest",
+        "tests/test_secretstream_container.py",
+        "tests/test_secretstream.py",
+        "tests/test_secret.py",
+        "-q",
+        "-o",
+        "addopts=",
+        "-o",
+        "cache_dir={verification}/pytest-cache"
+      ],
+      "timeout": 300
+    }
+  ]
+}

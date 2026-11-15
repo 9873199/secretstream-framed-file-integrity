@@ -1,0 +1,69 @@
+test_bad_magic_and_version (__main__.ContainerAcceptance.test_bad_magic_and_version) ... ok
+test_binary_roundtrip (__main__.ContainerAcceptance.test_binary_roundtrip) ... ok
+test_bounded_short_source_reads (__main__.ContainerAcceptance.test_bounded_short_source_reads) ... ok
+test_cross_file_splice_other_context (__main__.ContainerAcceptance.test_cross_file_splice_other_context) ... ok
+test_cross_file_splice_same_context (__main__.ContainerAcceptance.test_cross_file_splice_same_context) ... ok
+test_dirty_scratch_does_not_leak_old_data (__main__.ContainerAcceptance.test_dirty_scratch_does_not_leak_old_data) ... FAIL
+test_duplicate_final (__main__.ContainerAcceptance.test_duplicate_final) ... ok
+test_empty_exactly_one_final (__main__.ContainerAcceptance.test_empty_exactly_one_final) ... ok
+test_every_byte_truncation_zero_target_writes (__main__.ContainerAcceptance.test_every_byte_truncation_zero_target_writes) ... ok
+test_final_copy_failure_propagated_and_scrubbed (__main__.ContainerAcceptance.test_final_copy_failure_propagated_and_scrubbed) ... ok
+test_header_failure_clears_dirty_scratch (__main__.ContainerAcceptance.test_header_failure_clears_dirty_scratch) ... FAIL
+test_incremental_not_complete_without_final (__main__.ContainerAcceptance.test_incremental_not_complete_without_final) ... ok
+test_length_before_frame_body_read (__main__.ContainerAcceptance.test_length_before_frame_body_read) ... ok
+test_length_below_abytes (__main__.ContainerAcceptance.test_length_below_abytes) ... ok
+test_maximum_configured_frame_exact (__main__.ContainerAcceptance.test_maximum_configured_frame_exact) ... ok
+test_missing_final (__main__.ContainerAcceptance.test_missing_final) ... ok
+test_reader_independent_push_and_rekey (__main__.ContainerAcceptance.test_reader_independent_push_and_rekey) ... ok
+test_reordered_frames (__main__.ContainerAcceptance.test_reordered_frames) ... ok
+test_scratch_write_failure_zero_target (__main__.ContainerAcceptance.test_scratch_write_failure_zero_target) ... ok
+test_short_read_nonseek_input (__main__.ContainerAcceptance.test_short_read_nonseek_input) ... ok
+test_short_scratch_write_not_silent_success (__main__.ContainerAcceptance.test_short_scratch_write_not_silent_success) ... FAIL
+test_short_target_write_not_silent_success (__main__.ContainerAcceptance.test_short_target_write_not_silent_success) ... FAIL
+test_trailing_byte (__main__.ContainerAcceptance.test_trailing_byte) ... ok
+test_unsafe_constructor_limit (__main__.ContainerAcceptance.test_unsafe_constructor_limit) ... ok
+test_writer_explicit_rekey (__main__.ContainerAcceptance.test_writer_explicit_rekey) ... ok
+test_writer_independent_pull_and_ad (__main__.ContainerAcceptance.test_writer_independent_pull_and_ad) ... ok
+test_wrong_context (__main__.ContainerAcceptance.test_wrong_context) ... ok
+test_wrong_key (__main__.ContainerAcceptance.test_wrong_key) ... ok
+
+======================================================================
+FAIL: test_dirty_scratch_does_not_leak_old_data (__main__.ContainerAcceptance.test_dirty_scratch_does_not_leak_old_data)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\hc\userFeedback\cache\repairs-and-new12-20261115-r1\evaluation\uf-20261115-new8-secretstream-authenticated-reader\verification\strict-container-r2/test_acceptance.py", line 114, in test_dirty_scratch_does_not_leak_old_data
+    tmp=io.BytesIO(b'OLD-PLAINTEXT-SHOULD-NOT-LEAK'*4);tmp.seek(7);n,out,tmp,src=strict(encrypt(b'new'),scratch=tmp);self.assertEqual(out.getvalue(),b'new');self.assertEqual(n,3);self.assertEqual(tmp.getvalue(),b'')
+                                                                                                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'OLD-PLAnewEXT-SHOULD-NOT-LEAKOLD-PLAINTEX[71 chars]LEAK' != b'new'
+
+======================================================================
+FAIL: test_header_failure_clears_dirty_scratch (__main__.ContainerAcceptance.test_header_failure_clears_dirty_scratch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\hc\userFeedback\cache\repairs-and-new12-20261115-r1\evaluation\uf-20261115-new8-secretstream-authenticated-reader\verification\strict-container-r2/test_acceptance.py", line 118, in test_header_failure_clears_dirty_scratch
+    self.assertEqual(out.calls,[]);self.assertEqual(tmp.getvalue(),b'')
+                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'OLD-PLAINTEXT' != b''
+
+======================================================================
+FAIL: test_short_scratch_write_not_silent_success (__main__.ContainerAcceptance.test_short_scratch_write_not_silent_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\hc\userFeedback\cache\repairs-and-new12-20261115-r1\evaluation\uf-20261115-new8-secretstream-authenticated-reader\verification\strict-container-r2/test_acceptance.py", line 123, in test_short_scratch_write_not_silent_success
+    self.assertEqual(out.getvalue(),plain);self.assertEqual(n,len(plain))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'hellohelello' != b'hellohellohellohellohello'
+
+======================================================================
+FAIL: test_short_target_write_not_silent_success (__main__.ContainerAcceptance.test_short_target_write_not_silent_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\hc\userFeedback\cache\repairs-and-new12-20261115-r1\evaluation\uf-20261115-new8-secretstream-authenticated-reader\verification\strict-container-r2/test_acceptance.py", line 128, in test_short_target_write_not_silent_success
+    self.assertEqual(out.getvalue(),plain);self.assertEqual(n,len(plain))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'hellohellohe' != b'hellohellohellohellohello'
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.042s
+
+FAILED (failures=4)

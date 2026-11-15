@@ -1,0 +1,12 @@
+{
+  "source": {
+    "path": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\runtime-support",
+    "files": [
+      {
+        "path": "sitecustomize.py",
+        "sha256": "747013d9bd22de3eb43a30edc3d2501c002489c6ba08e003229f047d788aa01e"
+      }
+    ]
+  },
+  "purpose": "Only resolve same-version compiled nacl._sodium dependency; product Python modules must import from frozen replay."
+}

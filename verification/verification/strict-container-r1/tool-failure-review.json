@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-15T14:25:23+08:00",
+  "category": "reviewer_copy_path_limit",
+  "product_tests_executed": 0,
+  "score_effect": null,
+  "reason": "Windows260 path limit in reviewer shutil.copytree; frozen audit already passed. Use extended absolute paths for copy, preserve frozen original, failed revision, and original runner."
+}

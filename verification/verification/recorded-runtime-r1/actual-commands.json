@@ -1,0 +1,13 @@
+[
+  {
+    "id": "container",
+    "argv": [
+      "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\env\\Scripts\\python.exe",
+      "demo.py"
+    ],
+    "exit_code": 1,
+    "finished_at_seconds": 14.57,
+    "typed_command": "python demo.py",
+    "input_mode": "automated character editor, not manual typing"
+  }
+]

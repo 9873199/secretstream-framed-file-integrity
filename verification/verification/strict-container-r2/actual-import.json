@@ -1,0 +1,14 @@
+{
+  "time": "2026-11-15T14:25:27+08:00",
+  "argv": [
+    "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\tasks\\pynacl\\env\\Scripts\\python.exe",
+    "-B",
+    "-c",
+    "import importlib,json,sys;names=json.loads(sys.argv[1]);print(json.dumps({\"python\":sys.version,\"executable\":sys.executable,\"modules\":{n:importlib.import_module(n).__file__ for n in names}}))",
+    "[\"nacl\", \"nacl.secretstream\", \"nacl.bindings.crypto_secretstream\"]"
+  ],
+  "cwd": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\replay-source",
+  "exit_code": 0,
+  "stdout_log": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\actual-import.stdout.log",
+  "stderr_log": "D:\\hc\\userFeedback\\cache\\repairs-and-new12-20261115-r1\\evaluation\\uf-20261115-new8-secretstream-authenticated-reader\\verification\\strict-container-r2\\actual-import.stderr.log"
+}

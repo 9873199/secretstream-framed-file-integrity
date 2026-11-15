@@ -1,0 +1,29 @@
+{
+  "time": "2026-11-15T14:23:40+08:00",
+  "uid": 2127,
+  "status": "PASS",
+  "single_native_trace": "D:\\hc\\userFeedback\\cache\\runs\\uf-20261115-new8-secretstream-authenticated-reader\\frozen\\trajectory-original.jsonl",
+  "trace_sha256": "da7314652d106f8ba4adb2cf31f3827d4dcaf4853d439abaf4325189cffe569d",
+  "session_id": "11c50244-84d3-4272-9eb8-32a9cd1235dd",
+  "prompt_id": "e5e03392-8e60-4774-962d-4399fbbf88cd",
+  "exact_single_prompt": true,
+  "native_models": [
+    "auto_model/urm"
+  ],
+  "native_efforts": [
+    "high"
+  ],
+  "three_explicit_high_settings": true,
+  "native_success": true,
+  "frozen_files_unchanged": true,
+  "private_reasoning_excluded": true,
+  "event_counts": {
+    "queue-operation": 2,
+    "user": 131,
+    "attachment": 104,
+    "atis-latch": 28,
+    "assistant": 256,
+    "last-prompt": 28,
+    "system": 1
+  }
+}

@@ -1,0 +1,9 @@
+Real secretstream binary round-trip: PASS
+Independent AD, rekey and FINAL: PASS
+Every-byte truncation, zero target writes: PASS
+Different context splice rejected: PASS
+Reused scratch output: FAIL - old content copied
+Bad header clears scratch: FAIL - content remains
+Scratch short write: FAIL - success reported, bytes=12/25
+Target short write: FAIL - success reported, bytes=12/25
+Observed failing checks: 4

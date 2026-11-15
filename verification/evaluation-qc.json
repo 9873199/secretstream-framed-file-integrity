@@ -1,0 +1,16 @@
+{
+  "time": "2026-11-15T14:38:52+08:00",
+  "reviewer": "Codex primary reviewer",
+  "status": "PRIMARY_REVIEW_PASSED_AWAITING_USER_REVIEW",
+  "score": 3,
+  "score_basis": "真实libsodium独立28项24过4失败，模型新增和相关绑定71项复跑通过。认证容器和完整性主干可用，但严格提交会混入旧暂存数据、部分写入静默丢失且谎报成功，坏header未清暂存，影响文件输出可信性，建议3分。工具长路径故障不扣模型分。",
+  "checks": {
+    "observable_actions_reviewed": true,
+    "product_requirement_mapping_reviewed": true,
+    "process_and_product_facts_verified": true,
+    "score_feedback_consistency_checked": true,
+    "non_product_errors_excluded": true,
+    "semantic_diversity_checked": true
+  },
+  "official_project_acceptance": "NOT_CLAIMED"
+}
