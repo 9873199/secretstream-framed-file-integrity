@@ -1,6 +1,14 @@
 Changelog
 =========
 
+Unreleased
+----------
+* Added the ``nacl.secretstream`` module: a versioned, file-object oriented
+  binary container built on top of ``crypto_secretstream_xchacha20poly1305``,
+  with length prefixed frames, context/sequence/length authenticated as
+  additional data, distinguishable container exceptions and a strict
+  scratch-buffered decryption entry point.
+
 1.6.2 (2026-01-01)
 ------------------
 * Updated ``libsodium`` to 1.0.20-stable (2025-12-31 build) to resolve
